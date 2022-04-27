@@ -11,3 +11,92 @@ ul {
     list-style: none;
 }
 */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+body {
+    color: var(--primary-text-color);
+    background-color: #fff;
+}
+/* 
+Основной текст страницы #757575
+фоновый цвет #fff
+цвет логотипа #000000
+цвет акцента #2196F3
+фон героя #E5E5E5
+текст на темном фоне #FFFFFF
+текст ссылок в футере rgba(255, 255, 255, 0.6)
+*/
+
+/* heder */
+.logo {
+    color: #000000;
+}
+.text-logo {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link {
+    color: #212121;
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.contact .link {
+    color: var(--primary-text-color);
+}
+.contact .link:hover, .contact .link:focus {
+    color: var(--accent-color);
+}
+/* hero */
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+}
+.btn-hero {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+/* section */
+.title {
+    color: var(--title-text-color);
+}
+.section-title {
+    color: var(--title-text-color);
+}
+.name {
+    color: var(--title-text-color);
+}
+.section.team {
+    background-color: #fff;
+}
+
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+.footer-nav {
+    color: #FFFFFF;
+}
+.footer-list .footer-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-link:hover, .footer-link:focus {
+    color: var(--accent-color);
+}
+/* button portfolio */
+.btn-portfolio {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
