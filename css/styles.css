@@ -5,22 +5,13 @@ body {
 }
  */
 
- /* забираємо крапки зі списку */
+/* забираємо крапки зі списку */
 /* 
 ul {
     list-style: none;
 }
 */
-:root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-}
-body {
-    color: var(--primary-text-color);
-    background-color: #fff;
-    font-family: Roboto, sans-serif;
-}
+
 /* 
 Основной текст страницы #757575
 фоновый цвет #fff
@@ -31,98 +22,164 @@ body {
 текст ссылок в футере rgba(255, 255, 255, 0.6)
 */
 
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
 /* heder */
 .logo {
-    color: #000000;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 .text-logo {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .site-nav.list {
-    list-style: none;
+  list-style: none;
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
-    color: var(--accent-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 .site-nav .link {
-    color: #212121;
+  color: #212121;
 
-    text-decoration: none;
+  text-decoration: none;
 }
 .site-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .contact {
-    list-style: none;
+  list-style: none;
 }
 .contact .link {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 
-    text-decoration: none;
+  text-decoration: none;
 }
-.contact .link:hover, .contact .link:focus {
-    color: var(--accent-color);
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
 }
+
 /* hero */
+
 .hero {
-    background-color: #2F303A;
-    color: #FFFFFF;
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .btn-hero {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
-    cursor: pointer;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
 }
 
 /* section */
 .title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
 }
 .section-title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
 }
 .section-list {
-    list-style: none
+  list-style: none;
 }
 .name {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+}
+.position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
 }
 .section.team {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* footer */
 .footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 .footer-nav {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 .footer-list {
-    list-style: none
+  list-style: none;
 }
 .footer-list .footer-link {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 
-    text-decoration: none;
+  text-decoration: none;
 }
-.footer-link:hover, .footer-link:focus {
-    color: var(--accent-color);
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 /* button portfolio */
 .btn-portfolio {
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+  cursor: pointer;
 }
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.title.project-name {
+    font-size: 18px;
+    line-height: 2;
+}
+.name-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
 }
